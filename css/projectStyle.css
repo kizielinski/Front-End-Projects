@@ -1,0 +1,62 @@
+.gitLink > img{
+width: 50px;
+height: 50px;;
+}
+
+.gitLink > p{
+margin: 0px;
+}
+
+#trailer > img{
+    height: 20%;
+    width: 20%;
+}
+
+#AoShuLogo > img{
+    height: 20%;
+    width: 20%;
+}
+
+.spacer{
+    height: 2rem;
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    flex-grow: 1;
+}
+
+.verticalSection{
+    display: flex;
+    flex-direction: row;
+}
+
+.horizontalSection{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 40vw;
+    height: 20vh;
+}
+
+.horizontalSection > p{
+    height: 80px;
+    width: 60%;
+}
+
+.horizontalSection > p > img{
+    width: 40%;
+}
+
+#linkDirectX{
+    margin-top: 50px;
+}
+
+.horizontalSection > video{
+    width: 382px;
+    height: 216px;
+    margin: 0px;
+}
