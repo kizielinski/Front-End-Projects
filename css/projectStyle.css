@@ -7,14 +7,28 @@ height: 50px;;
 margin: 0px;
 }
 
-#trailer > img{
-    height: 20%;
-    width: 20%;
+#AoShuLogo > img{
+    width: 380px;
 }
 
-#AoShuLogo > img{
-    height: 20%;
-    width: 20%;
+#AoShuLogo{
+    display: flex;
+    align-items: center;
+}
+
+#AoShuLogo > a{
+    display: flex;
+    align-items: center;
+}
+
+#AoShuTrailer{
+    display: flex;
+    align-items: center;
+}
+
+#trailer > img{
+    height: 30px;
+    width: 100px;
 }
 
 .spacer{
@@ -33,26 +47,35 @@ margin: 0px;
 .verticalSection{
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .horizontalSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40vw;
+}
+/* .horizontalSection{
     margin-top: 100px;
     margin-bottom: 100px;
     width: 40vw;
     height: 20vh;
-}
+    align-self: center;
+} */
 
 .horizontalSection > p{
     height: 80px;
     width: 60%;
 }
 
-.horizontalSection > p > img{
-    width: 40%;
+.horizontalSection > .projectImage{
+    display: flex;
+    align-items: center;
 }
 
-#linkDirectX{
-    margin-top: 50px;
+.horizontalSection > .projectImage > img{
+    width: 380px;
 }
 
 .horizontalSection > video{

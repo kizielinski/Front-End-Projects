@@ -3,7 +3,7 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport""horizontalSection="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport"width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -12,13 +12,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
-    <title>Title</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <title>Project Info</title>
   </head>
   <body>
     <div class="flex-container">
       <div id="page-header">
         <h1 class="hover-anim">
-        <a href="www.kylezielinski.net">Z</a> <!-- Make sure to write function to make text always white with no underline (color + text decoration)-->
+        <a href="./index.html">Z</a> <!-- Make sure to write function to make text always white with no underline (color + text decoration)-->
         </h1>
         <div id="navbar">
           <div class="navitem">
@@ -39,37 +40,16 @@
         </div>
       </div>
       
-
-
       <div id="content">
-        
         <div class="verticalSection">
           <div class="horizontalSection">
-            <h3 class="hover-anim">MWS</h3>
-            <p>Singleplayer game made in Unreal engine where the player explores the power behind a sword. This project is currently in progress within Unreal 5.</p>
-            <video id="MWSVideo" controls>
-              <source src="/Images/mws/0001-1182.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="horizontalSection">
-            <h3 class="hover-anim">Chronocrab (Deluxe)</h3>
-            <p>Top Down Bullet Hell Game where you have only have a few moments to save the island from the Lobster King</p>
-            <a class="gitLink" href="https://github.com/kizielinski/GraphicsPlaygroundDX11">
-              <img src="/Images/git/github-mark-white.png" alt="git logo">
-            </a>
-            <div class="spacer"></div>
-          </div>
-        </div>
-
-        <div class="verticalSection">
-          <div class="horizontalSection">
-            <h3 class="hover-anim">DirectX11</h3>
+            <h3 class="hover-anim"><a href="/directX.html">DirectX11</a></h3>
             <p>
               This page delves into my custom built rendering engine which I am using to learn more about shaders and rendering techniques
-            </p> 
-            <p>
-                <img src="/Images/home/Graphics_1.png">
             </p>
+            <div class="projectImage">
+                <img src="/Images/home/Graphics_1.png">
+            </div>
             <div id="linkDirectX">
               <a class="gitLink" href="https://github.com/kizielinski/GraphicsPlaygroundDX11">
               <img src="/Images/git/github-mark-white.png" alt="git logo">
@@ -89,44 +69,64 @@
 
         <div class="verticalSection">
           <div class="horizontalSection">
-            <h3 class="hover-anim">Ao Shu</h3>
+            <h3 class="hover-anim"><a href="/directX.html">Ao Shu</a></h3>
             <div>
-              <p>Read about the game on Artcenter:
-              <p>
-                <a id="AoShuLogo" href="https://www.artcenter.edu/gallery/detail/566b2a684d9b6f5c0a7bb439/20014?ret=/academics/undergraduate-degrees/entertainment-design/overview.html&featured_url=&featured_name=">
-                  <img src="/Images/Ao Shu/small.jpg" alt="git logo">
-                </a>
+              <p id="#AoShuStatement">
+              Read about the game on Artcenter's site!
               </p>
-              </p>
-              <p>Trailer Courtesy of ArtCenter:
-                <p>
+            </div>
+            
+            <div class="projectImage">
+              <a id="AoShuLogo" href="https://www.artcenter.edu/gallery/detail/566b2a684d9b6f5c0a7bb439/20014?ret=/academics/undergraduate-degrees/entertainment-design/overview.html&featured_url=&featured_name=">
+                <img src="/Images/Ao Shu/small.jpg" alt="git logo">
+              </a>  
+            </div>
+            <div class="projectImage">
+              <p id="#AoShuTrailer">Trailer Courtesy of ArtCenter:
                   <a id="trailer" href="https://www.artcenterentertainment.com/ao-shu-spellslinger">
                     <img src="/Images/Ao Shu/yt_logo_mono_dark.png" alt="git logo">
                   </a>
-                </p>
-                
               </p>
             </div>
             <div class="spacer"></div>
           </div>
+          <div class="horizontalSection">
+            <h3 class="hover-anim">Chronocrab (Deluxe)</h3>
+            <p>Top Down Bullet Hell Game where you have only have a few moments to save the island from the Lobster King. Built in a team of four members.</p>
+            <video id="MWSVideo" controls>
+              <source src="/videos/chrono_crab.mp4" type="video/mp4">
+            </video>
+            <div class="spacer"></div>
+          </div>
         </div>
+
+        <!-- <div class="verticalSection">
+          <div class="horizontalSection">
+            <h3 class="hover-anim">MWS</h3>
+            <p>Singleplayer game made in Unreal engine 5 where the player explores the power behind a sword. This project is currently in progress.</p>
+            <video id="MWSVideo" controls>
+              <source src="/videos//mws_running_anim.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div> -->
       </div>
       
-      <div id="spacer">
-        <hr id="red"></hr>
-        <hr id="green"></hr>
-        <hr id="blue"></hr>
-      </div>
       <footer>
-        <div id="linkeddiv">
+        <div id="spacer">
+            <hr id="red">
+            <hr id="green">
+            <hr id="blue">
+          </div>
+        <div id="linkedDiv">
           <a href= "https://www.linkedin.com/in/kyle-zielinski/">
             <img id="LN" src="Images/home/LI-In-Bug.png">
           </a>
+          <div id="personalInfo">
+            <p>Kyle Zielinski</p>
+            <p>P: 413-813-5447</p> 
+          </div>
         </div>
-        <div id="personalInfo">
-          <p>Kyle Zielinski</p>
-          <p>P: 413-813-5447</p> 
-        </div>
+        
       </footer>
   </div>
     <!-- Optional JavaScript -->
