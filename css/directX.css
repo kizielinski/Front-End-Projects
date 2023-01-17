@@ -1,0 +1,40 @@
+.verticalSection{
+    display: flex;
+    flex-direction: row;
+}
+
+.horizontalSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40vw;
+}
+
+.horizontalSection > p{
+    font-size: 212x;
+    width: 80%;
+}
+
+.horizontalSection > ul{
+    width: 80%;
+}
+
+#directXImageOne{
+    width: 80%;
+}
+
+@media only screen and (max-width: 800px) {
+    .verticalSection{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .horizontalSection{
+        width: 90%;
+        margin-top: 30px;
+    }
+
+    #directXImageOne{
+        width: 60%;
+    }
+}

@@ -3,21 +3,8 @@
     height: 50px;;
     }
     
-    .gitLink > p{
-    margin: 0px;
-    }
-    
-.spacer{
-    height: 2rem;
-}
-
-#content{
-    display: flex;
-    flex-direction: column;
-    margin: 0px;
-    margin-left: 10vw;
-    margin-right: 10vw;
-    flex-grow: 1;
+.gitLink > p{
+margin: 0px;
 }
 
 .verticalSection{
@@ -29,40 +16,17 @@
     margin-top: 100px;
     margin-bottom: 100px;
     width: 40vw;
-    height: 20vh;
+    height: auto;
 }
 
 .horizontalSection > p{
-    height: 80px;
+    height: auto;
     width: 80%;
-    margin-top: 50px;
-}
-
-.horizontalSection > p > img{
-    width: 40%;
-}
-
-#linkDirectX{
-    margin-top: 50px;
-}
-
-.horizontalSection > video{
-    width: 382px;
-    height: 216px;
-    margin: 0px;
-}
-
-#contactHeader > h3{
-    margin-bottom: 500px;
+    margin-top: 5px;
 }
 
 #contact > p {
-    height: auto;
-    margin-top: 0px;
-}
 
-#contact > h3{
-    margin-bottom: 50px;
 }
 
 #resume{
@@ -72,4 +36,76 @@
 #links{
     display: flex;
     flex-direction: row;
+}
+
+@media only screen and (max-width: 1366px) {
+
+    .horizontalSection{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        width: 40vw;
+        height: 5px;
+        margin: 0px;
+        margin-top: 30px;
+    }
+    
+    
+    .horizontalSection > .header{
+        font-size: 25px;
+    }
+
+    .horizontalSection > p{
+        height: auto;
+        width: 80%;
+        margin-top: 5px;
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 900px){
+
+    #spacer{
+        margin-top: auto;
+    }
+
+    footer{
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        margin-top: auto;
+    }
+}
+
+@media only screen and (max-width: 700px){
+
+    .verticalSection{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .horizontalSection{
+        width: 80vw;
+        height: auto;
+    }
+    
+    .horizontalSection > .header{
+        font-size: 25px;
+    }
+
+    .horizontalSection > p{
+        width: 80%;
+        margin-top: 5px;
+        font-size: 0.8rem;
+    }
+
+    #spacer{
+        margin-top: auto;
+    }
+
+    footer{
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        margin-top: auto;
+    }
 }
