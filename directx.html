@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <title>DirectX Deep Dive</title>
   </head>
   <body>
@@ -69,32 +69,120 @@
         </div>
 
         <div class="verticalSection">
-          <div class="horizontalSection">
-            <!-- <h3 class="hover-anim">MWS</h3>
-            <p>Singleplayer game made in Unreal engine 5 where the player explores the power behind a sword. This project is currently in progress.</p>
-            <video id="MWSVideo" controls>
-              <source src="/videos//mws_running_anim.mp4" type="video/mp4">
-            </video> -->
-          </div>
-          <div class="horizontalSection">
-            <!-- <h3 class="hover-anim">Chronocrab (Deluxe)</h3>
-            <p>Top Down Bullet Hell Game where you have only have a few moments to save the island from the Lobster King. Built in a team of four members.</p>
-            <video id="MWSVideo" controls>
-              <source src="/videos/chrono_crab.mp4" type="video/mp4">
-            </video> -->
-            <div class="spacer"></div>
+          <div class="horizontalGrid">
+            <h3 class="hover-anim">Lighting</h3>
+            <p class="gridDescription">
+              Within the project I have implemented basic lighting and PBR lighting. These types of lighting were either commented out or modified as part of my IBL lighting system. As seen in this shots below my objects render differently based on their different material properties as well as the type of light involved. Currently directional and point lights are implemented, as well as the IBL calculated from the skybox. 
+            </p>
+            <div id="imageGrid">
+              <div class="gridObject">
+                <p class="gridText">
+                  Some default directional lights on some basic sphere objects with different metallic values with specular intesnsity 1.0f
+                </p>
+                <img class="gridImage" src="/Images/directX/default-directional.png">
+              </div>
+              <div class="gridObject">
+                <p class="gridText">
+                  Randomized lights on all objects
+                </p>
+                <img class="gridImage" src="/Images/directX/randomized_lights.png">
+              </div>
+              <div class="gridObject">
+                <p class="gridText">
+                  Red and Blue directional lights meeting in the center
+                </p>
+                <img class="gridImage" src="/Images/directX/directional_red_blue.png">
+              </div>
+              <div class="gridObject">
+                <p class="gridText">
+                  Red and blue directional lights meeting a diagonal in the center causing color blend into purple Lore
+                </p>
+                <img class="gridImage" src="/Images/directX/directional_red_blue_blend.png">
+              </div>
+              <div class="gridObject">
+                <p class="gridText">
+                  Red and blue point lights completely overlapping on objects
+                </p>
+                <img class="gridImage" src="/Images/directX/light_blend.png">
+              </div>
+              <div class="gridObject">
+                <p class="gridText">
+                  Specular intensity ratio of 3:1 Red and Blue point lights
+                </p>
+                <img class="gridImage" src="/Images/directX/point_3red_1blue_blend.png">
+              </div>
+              <div class="gridObject">
+                <p class="gridText">
+                  Specular intensity ratio of 1:1 Red and Blue point lights
+                </p>
+                <img class="gridImage" src="/Images/directX/point_red_blue_50_50_blend.png">
+              </div>
+            </div>
           </div>
         </div>
 
         <div class="verticalSection">
-          <div class="horizontalSection">
-            <!-- <h3 class="hover-anim">Ao Shu</h3> -->
-            <div>
+          <div class="horizontalGrid">
+            <h3 class="hover-anim">Improvements</h3>
+            <p class="gridDescription">
+              Within the project there are some improvements to be able to use the implemented features. With ImGUI library I created a functional UI that can load new entities select them and alter their transform values. It can also load skyboxes and I am currently working on a save scene features. With my second window I can view my current material SRV as well as any new ones I bring into the project instance via the file explorer. This multiple render target view window allows me to be able to easily tell whether my models, my source code, or my shader code is the problem when encountering rendering problems.
+            </p>
+            <div id="imageGrid">
+              <div class="gridObject">
+                <p class="gridText">
+                  ImGui Window that acts a small tool when developing or looking through my objects and viewing their rendered materials and shaders.
+                </p>
+                <img class="gridImage" src="/Images/directX/imgui_main.png">
+              </div>
+              <div class="gridObject">
+                <p class="gridText">
+                  Showcase of my render target views
+                </p>
+                <img class="gridImage" src="/Images/directX/imgui_mrtv.png">
+              </div>
+              <div class="gridObject">
+                <p class="gridText">
+                </p>
+                <img class="gridImage" src="/Images/directX/imgui_mrtv2.png">
+              </div>
             </div>
-            <div class="spacer"></div>
           </div>
         </div>
-      </div>
+
+        <div class="verticalSection">
+          <div class="horizontalGrid">
+            <h3 class="hover-anim">Entities</h3>
+            <p class="gridDescription">
+              Within the project I can load or create various entities using the Open Asset Import Library and I can also adjust their transforms via some matrix math making use of the DirectX api to help handle the matrices. My default scene uses spheres, but as displayed below I can render most models as long as there isn't some sort of error in their normals.
+            </p>
+            <div id="imageGrid">
+              <div class="gridObject">
+                <p class="gridText">
+                  Directional lights on my objects
+                </p>
+                <video class="gridVideo" controls>
+                  <source src="/videos/directX_directional.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="gridObject">
+                <p class="gridText">
+                  Refractional object showcase
+                </p>
+                <video class="gridVideo" controls>
+                  <source src="/videos/directX_refraction.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="gridObject">
+                <p class="gridText">
+                  External Model Loading Showcase
+                </p>
+                <video class="gridVideo" controls>
+                  <source src="/videos/directX_simple_model_change.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
       
       <footer>
         <div id="spacer">
@@ -111,7 +199,6 @@
             <p>P: 413-813-5447</p> 
           </div>
         </div>
-        
       </footer>
   </div>
     <!-- Optional JavaScript -->
