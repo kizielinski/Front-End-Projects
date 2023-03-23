@@ -148,7 +148,7 @@ hr{
 .hover-anim::after {
     content: '';
     position: absolute;
-    width: 100%;
+    width: 18rem;
     transform: scaleX(0);
     height: 4px;
     bottom: 0;
