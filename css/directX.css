@@ -67,14 +67,11 @@
     width: 40%;
 }
 
-h3{
-    width: 290px;
-}
-
 @media only screen and (max-width: 900px){
 
     .hover-anim::after{
-        width: 13rem;
+        width: 10vw;
+        width: var(--animSize);
     }
 
     .verticalSection{
@@ -104,7 +101,8 @@ h3{
 @media only screen and (max-width: 600px){
 
     .hover-anim::after{
-        width: 11.5rem;
+        width: 10vw;
+        width: var(--animSize);
     }
 
     h3{
