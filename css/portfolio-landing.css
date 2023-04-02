@@ -27,7 +27,7 @@ body{
   }
 
 .box > p {
-    width: 35%;
+    width: 35vw;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
