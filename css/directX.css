@@ -26,6 +26,11 @@
     width: 80%;
 }
 
+.gitLink > img{
+    width: 40px;
+    padding-bottom: 10px;
+}
+
 #directXImageOne{
     width: 80%;
 }
