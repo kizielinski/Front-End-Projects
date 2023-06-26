@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/portfolio-landing.css">
+    <link rel="stylesheet" href="css/directX.css">
+    <link rel="stylesheet" href="css/the-system.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>The System</title>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div id="page-header">
+        <h1 class="soloLink hover-anim">
+        <a href="./index.html">Z</a> <!-- Make sure to write function to make text always white with no underline (color + text decoration)-->
+        </h1>
+        <div id="navbar">
+          <div class="navitem">
+            <a class="link" href="/index.html">
+            <p id="red-anim" class="hover-anim">Home</p>
+            </a>
+          </div>
+          <div class="navitem">
+            <a class="link" href="/projects.html">
+              <p id="green-anim" class="hover-anim">Projects</p>
+            </a>
+          </div>
+          <div class="navitem">
+            <a class="link" href="/about.html">
+              <p id="blue-anim" class="hover-anim">About</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div id="content">
+        <div class="verticalSection">
+          <div class="horizontalSection">
+            <div>
+              <h3 class="soloLink hover-anim">
+                <a href="https://github.com/kizielinski/GraphicsPlaygroundDX11">
+                DirectX11 Project
+                </a>
+              </h3>
+              <a class="gitLink" href="https://github.com/kizielinski/GraphicsPlaygroundDX11">
+                <img src="/Images/git/github-mark-white.png" alt="git logo">
+                </a>
+            </div>
+            <p>
+              This project started out through a couple of graphics development courses at RIT. Within this page I go over the implemented features, and features that are in progress
+            </p> 
+            <img id="directXImageOne" src="/Images/the_system/TheSystem_1.png">
+            <div id="linkDirectX">
+            </div>
+            <div class="spacer"></div>
+          </div>
+          <div class="horizontalSection">
+            <div>
+              <h3 class="soloLink hover-anim">Feature Overview</h3>
+            </div>
+            <ul>
+              <li>Smooth Player Movement</li>
+              <li>Diverse Enemy Types</li>
+              <li>Mesh-based Detection Cones</li>
+              <li>2D Tilemaps</li>
+              <li>Design Documentation</li>
+            </ul>
+            <div class="spacer"></div>
+          </div>
+        </div>
+
+        <div class="verticalSection">
+          <div class="horizontalGrid">
+            <div>
+              <h3 class="soloLink hover-anim">Smooth Player Movement</h3>
+            </div>
+            <p class="gridDescription">
+              Within the project it was decided that the player would be given a basic movement speed as well as the ability to jump as standard actions. Additionally they could grapple to special grapple points and also ledge grab any ledge created within a level. This would allow for smooth and quick platforming reminiscent of games such as Bionic Commando (CapCom 1988) and Super Metroid (Nintendo 1994). 
+            </p>
+            <div id="imageGrid">
+              <div class="gridObject">
+                <p class="gridText">
+                  Here is some example gameplay of player platforming.
+                </p>
+                <video class="gridVideo" controls loop autoplay>
+                    <source src="/videos/the_system_gameplay1.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="gridObject">
+                <p class="gridText">
+                  Player Spawning - Unrestricted Movement
+                </p>
+                <video class="gridVideo" controls loop autoplay>
+                    <source src="/videos/the_system_gameplay2.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="verticalSection">
+          <div class="horizontalGrid">
+            <div>
+              <h3 class="soloLink hover-anim">Diverse Enemy Types</h3>
+            </div>
+            <p class="gridDescription">
+              Within the project it was decided to make some fundamental enemy types that allowed both basic and advanced combat gameplay. These enemy types include the folowing:
+              <div id="enemy"> 
+                <ul>
+                    <li>Walker - Simple walking patrol and auto attacks</li>
+                    <li>Sentry - Inactive and then dashes through the player if close enough. Once completing </li>
+                    <li>Captain - Patrols and then throws bombs at the player. Dashes at the player if close enough</li>
+                    <li>Lasers - Hazards that knock the player back when running into them</li>
+                </ul>
+              </div>
+            </p>
+            <div id="imageGrid">
+                <div class="gridObject">
+                    <p class="gridText">
+                      Walker Enemy Gameplay - Added Soon
+                    </p>
+                    <video class="gridVideo" controls loop autoplay>
+                        <source src="/videos/.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="gridObject">
+                    <p class="gridText">
+                      Sentry Enemy Gameplay - Added Soon
+                    </p>
+                    <video class="gridVideo" controls loop autoplay>
+                        <source src="/videos/.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="gridObject">
+                    <p class="gridText">
+                      Captain Enemy Gameplay - Added Soon
+                    </p>
+                    <video class="gridVideo" controls loop autoplay>
+                        <source src="/videos/.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="gridObject">
+                    <p class="gridText">
+                      Drone Enemy Gameplay
+                    </p>
+                    <video class="gridVideo" controls loop autoplay>
+                        <source src="/videos/the_system_gameplay_drone.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="verticalSection">
+          <div class="horizontalGrid">
+            <div>
+              <h3 class="soloLink hover-anim">Design Documentation</h3>
+            </div>
+            <p class="gridDescription">
+              My part in the project was to adjust and redefine the games design at fundamental levels. I was there to take a generated idea and bring it into fruition and polish the result so that it met the gameplay feel standards.
+
+              ...PDF... File here
+            </p>
+            <div id="imageGrid">
+              
+            </div>
+          </div>
+        </div>
+      
+      <footer>
+        <div id="spacer">
+            <hr id="red">
+            <hr id="green">
+            <hr id="blue">
+          </div>
+        <div id="linkedDiv">
+          <a href= "https://www.linkedin.com/in/kyle-zielinski/">
+            <img id="LN" src="Images/home/LI-In-Bug.png">
+          </a>
+          <div id="personalInfo">
+            <p>Kyle Zielinski</p>
+            <p>P: 413-813-5447</p> 
+          </div>
+        </div>
+      </footer>
+  </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./js/anim.js"></script>
+  </body>
+</html>

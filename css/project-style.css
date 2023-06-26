@@ -55,6 +55,7 @@ margin: 0px;
     flex-direction: column;
     align-items: center;
     width: 40vw;
+    height: 100%;
 }
 
 .horizontalSection > p{
@@ -75,6 +76,10 @@ margin: 0px;
     width: 382px;
     height: 216px;
     margin: 0px;
+}
+
+.projectImage {
+    height: 100%;
 }
 
 @media only screen and (max-width: 1418px)  {
