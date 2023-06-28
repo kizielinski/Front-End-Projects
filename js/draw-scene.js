@@ -55,6 +55,10 @@ function drawScene(gl, programInfo, buffers, texture, cubeRotation) {
       cubeRotation * 0.3, // amount to rotate in radians
       [1, 0, 0]
     ); // axis to rotate around (X)
+
+    const normalMatrix = mat4.create();
+    mat4.invert(normalMatrix, modelViewMatrix);
+    mat4.transpose(normalMatrix, normalMatrix);
   
     // Tell WebGL how to pull out the positions from the position
     // buffer into the vertexPosition attribute.
@@ -65,6 +69,8 @@ function drawScene(gl, programInfo, buffers, texture, cubeRotation) {
 
     //Bind our idces to WebGL
     gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, buffers.indices);
+
+    setNormalAttribute(gl, buffers, programInfo);
 
     // Tell WebGL to use our program when drawing
     gl.useProgram(programInfo.program);
@@ -79,6 +85,12 @@ function drawScene(gl, programInfo, buffers, texture, cubeRotation) {
       programInfo.uniformLocations.modelViewMatrix,
       false,
       modelViewMatrix
+    );
+
+    gl.uniformMatrix4fv(
+      programInfo.uniformLocations.normalMatrix,
+      false,
+      normalMatrix
     );
   
     // Tell WebGL we want to affect texture unit 0
@@ -156,6 +168,26 @@ function drawScene(gl, programInfo, buffers, texture, cubeRotation) {
       offset
     );
     gl.enableVertexAttribArray(programInfo.attribLocations.vertexColor);
+  }
+
+  // Tell WebGL how to pull out the normals from
+  // the normal buffer into the vertexNormal attribute.
+  function setNormalAttribute(gl, buffers, programInfo) {
+    const numComponents = 3;
+    const type = gl.FLOAT;
+    const normalize = false;
+    const stride = 0;
+    const offset = 0;
+    gl.bindBuffer(gl.ARRAY_BUFFER, buffers.normal);
+    gl.vertexAttribPointer(
+      programInfo.attribLocations.vertexNormal,
+      numComponents,
+      type,
+      normalize,
+      stride,
+      offset
+    );
+    gl.enableVertexAttribArray(programInfo.attribLocations.vertexNormal);
   }
   
   export { drawScene };
